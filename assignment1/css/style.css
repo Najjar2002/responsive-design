@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   padding: 20px;
   background-color: #ffffff;
 }
@@ -20,23 +20,23 @@ h1 {
   float: left;
   border: 1px solid black;
   padding: 30px 15px 15px 15px;
-  margin: 10px;
   position: relative;
   min-height: 180px;
+  margin-bottom: 20px;
 }
 
-/* ألوان الخلفيات الجديدة */
 .chicken {
   background-color: #E6F0FF;
 }
+
 .beef {
   background-color: #FFF2E6;
 }
+
 .sushi {
   background-color: #F0FFF4;
 }
 
-/* عنوان القسم - top right */
 .section-title {
   position: absolute;
   top: 0;
@@ -47,7 +47,6 @@ h1 {
   font-weight: bold;
 }
 
-/* ألوان عناوين الأقسام */
 .chicken .section-title {
   background-color: #005C99;
   color: #ffffff;
@@ -74,6 +73,11 @@ h1 {
 @media (min-width: 992px) {
   .section {
     width: 30%;
+    margin-right: 3.333%;
+  }
+
+  .section:last-child {
+    margin-right: 0;
   }
 }
 
@@ -81,11 +85,17 @@ h1 {
 @media (min-width: 768px) and (max-width: 991px) {
   .section {
     width: 47%;
+    margin-right: 6%;
   }
 
-  .section:nth-child(3) {
+  .section:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .beef {
     width: 100%;
     clear: both;
+    margin-top: 20px;
   }
 }
 
