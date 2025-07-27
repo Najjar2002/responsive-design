@@ -85,10 +85,14 @@ h1 {
 @media (min-width: 768px) and (max-width: 991px) {
   .section {
     width: 47%;
+    margin-bottom: 20px;
+  }
+
+  .section:nth-child(1) {
     margin-right: 6%;
   }
 
-  .section:nth-child(2n) {
+  .section:nth-child(2) {
     margin-right: 0;
   }
 
