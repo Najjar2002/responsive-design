@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.75em;
+}
+
+.section {
+  float: left;
+  border: 1px solid black;
+  padding: 30px 15px 15px 15px;
+  margin: 10px;
+  position: relative;
+  min-height: 180px;
+}
+
+/* ألوان الخلفيات الجديدة */
+.chicken {
+  background-color: #E6F0FF;
+}
+.beef {
+  background-color: #FFF2E6;
+}
+.sushi {
+  background-color: #F0FFF4;
+}
+
+/* عنوان القسم - top right */
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+/* ألوان عناوين الأقسام */
+.chicken .section-title {
+  background-color: #005C99;
+  color: #ffffff;
+}
+
+.beef .section-title {
+  background-color: #D35400;
+  color: #ffffff;
+}
+
+.sushi .section-title {
+  background-color: #1E8449;
+  color: #ffffff;
+}
+
+.section p {
+  margin-top: 40px;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #000;
+}
+
+/* Desktop: 992px and up */
+@media (min-width: 992px) {
+  .section {
+    width: 30%;
+  }
+}
+
+/* Tablet: 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 47%;
+  }
+
+  .section:nth-child(3) {
+    width: 100%;
+    clear: both;
+  }
+}
+
+/* Mobile: 767px and below */
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+    clear: both;
+  }
+}
